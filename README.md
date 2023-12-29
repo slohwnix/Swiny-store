@@ -13,6 +13,6 @@ Download .ZIP and go to `src/`
 
 Create folder "Swiny-store" at `SD/storage/apps/lua`
 
-move all files to paxo `SD/storage/apps/lua/Swiny-store`
+move all files to `SD/storage/apps/lua/Swiny-store`
 
 start your paxo phone and run app

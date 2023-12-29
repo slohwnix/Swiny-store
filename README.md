@@ -9,8 +9,8 @@
 
 # Test instruction 
 
-install git and run 
+Download .ZIP and go to `src/`
 
-```
-git clone 
-```
+move all files to paxo SD/storage/apps/lua
+
+start your paxo phone and run app

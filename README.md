@@ -11,6 +11,6 @@
 
 Download .ZIP and go to `src/`
 
-move all files to paxo SD/storage/apps/lua
+move all files to paxo `SD/storage/apps/lua`
 
 start your paxo phone and run app

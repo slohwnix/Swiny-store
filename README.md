@@ -25,7 +25,7 @@ start your paxo phone and run
 
 # Credits for PAXO™ version
 
-- djopro_yt for distribution on DJ app store
+- `djopro_yt` for distribution on DJ app store
 
-- PAXO team for paxoOS and LUA interpreter
+- `PAXO team` for paxoOS and LUA interpreter
 

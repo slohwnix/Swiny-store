@@ -1,5 +1,5 @@
 # Swiny-store
-
+![Logo of Swiny](logo.png)
 
 
 swiny-store is a open source store for

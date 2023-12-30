@@ -7,37 +7,46 @@ function run()
 
     local HttpClient = p.HttpClient
 
+    local function downloadApp(appName)
+        local appURL = "https://github.com/slohwnix/Swiny-store/tree/main/Paxo/" .. appName
+        HttpClient.get(appURL, function(response)
+            if response.status == 200 then
+                -- Traiter la rÃ©ponse (peut-Ãªtre sauvegarder le contenu tÃ©lÃ©chargÃ©, etc.)
+                print("TÃ©lÃ©chargement de l'application " .. appName)
+            else
+                print("Erreur lors du tÃ©lÃ©chargement de l'application " .. appName)
+            end
+        end)
+    end
+
     local function handleResponse(response)
         if response.status == 200 then
             local appsList = response.body
 
-            -- Séparation des applications individuelles
+            -- SÃ©paration des applications individuelles
             local apps = {}
             for app in appsList:gmatch("[^\r\n]+") do
                 table.insert(apps, app)
             end
 
-            -- Créer des boutons pour chaque application
+            -- CrÃ©er des boutons pour chaque application
             local y = 50
             for i, appName in ipairs(apps) do
                 local button = p.button(window, 50, y, 200, 30)
                 button:setText(appName)
 
-                -- Associer une action au clic du bouton
+                -- Associer une action au clic du bouton pour tÃ©lÃ©charger l'application
                 button:onClick(function()
-                    -- Télécharger l'application correspondante
-                    -- Utiliser HttpClient pour effectuer la requête de téléchargement
-                    -- (Code de téléchargement ici)
-                    print("Téléchargement de l'application " .. appName)
+                    downloadApp(appName)
                 end)
 
                 y = y + 40 -- Espacement vertical entre les boutons
             end
         else
-            print("Erreur lors de la récupération de la liste des applications")
+            print("Erreur lors de la rÃ©cupÃ©ration de la liste des applications")
         end
     end
 
-    -- Récupérer le contenu du fichier AppsList.txt depuis son URL
+    -- RÃ©cupÃ©rer le contenu du fichier AppsList.txt depuis son URL
     HttpClient.get("https://raw.githubusercontent.com/slohwnix/Swiny-store/main/Paxo/AppsList.txt", handleResponse)
 end

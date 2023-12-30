@@ -1,5 +1,7 @@
 # Swiny-store
 
+![Logo](logo.png)
+
  swiny-store is a open source store.
 
   You are on PAXO branch 

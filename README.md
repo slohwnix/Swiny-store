@@ -1,5 +1,5 @@
 # Swiny-store
-![Logo of Swiny](logo.png)
+![Logo of Swiny](#paxo)
 
 
 swiny-store is a open source store for

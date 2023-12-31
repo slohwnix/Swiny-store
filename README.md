@@ -1,8 +1,12 @@
 # Swiny-store
 
-
-swiny-store is a open source store for
-   Android and paxo phone
-
+swiny-store is a open source store 
   see android and paxo branch
-[Paxo tree](https://github.com/slohwnix/Swiny-store/tree/Paxo)
+
+***
+
+ # Build instruction : 
+ 
+
+  
+

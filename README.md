@@ -1,6 +1,6 @@
 # Swiny-store
 
-![Logo](logo.png)
+![Logo](docs/swiny-x-dj.png)
 
  swiny-store is a open source store.
 
